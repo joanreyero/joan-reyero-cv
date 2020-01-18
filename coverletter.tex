@@ -1,0 +1,147 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-gold}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[rectangle,noedge,left]{profile}
+\name{Joan}{Reyero}
+\position{Machine Learning{\enskip\cdotp\enskip}Artificial Intelligence}
+\address{1/4 Old Infirmary Lane, Edinburgh. EH1 1LU, Edinburgh.}
+
+\mobile{07548898887}
+\email{joanreyero@gmail.com}
+%\homepage{www.posquit0.com}
+\github{joanreyero}
+\linkedin{joanreyero}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world. Now!"}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Application to Amazon Robotics Internship}{}
+%  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+%\lettertitle{Application for Robotics Internship}
+% How the letter is opened
+\letteropening{Dear Berenika,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Joan Reyero~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a third year informatics student in the university of Edinburgh. For the best part of my undergraduate I have focused in artificial intelligence. I have gained extensive knowledge in Machine Learning, both analytically and applying it in practice, speech and natural language processing, and planning and intelligent agents. Moreover, I have learnt the standard concepts of computer science, such as algorithms and data structures, and software engineering. 
+
+I am currently working on a robotics project with a team of students at my university. Our goal is to make a smart shelf with object retrieval. The user will indicate that they want an item from the shelf using a keypad, an app or Alexa. The System uses internal memory to position itself in the place where the item is, it scoops the item and places it on the a Turtlebot. The Turtlebot finds its way to the user and hands them the item using a robotic arm. The process can be repeated in reverse to put the item back in its place. In April we will be demonstrating in front of several companies, including Amazon.
+
+
+
+\lettersection{Why Amazon Robotics?}
+
+Ever since I was a kid I have been fascinated by robotics. I have owned a Raspberry Pi and an Arduino since I was 12 years old, and making simple robots has always been one of my favourite hobbies, such as a simple autonomous car and an motion-based light switch for my room.
+
+Working as an intern for Amazon Robotics is the perfect opportunity to pursue this life-long passion and take the first step towards turning it into my profession. I believe that the resources at Amazon, together with the outstanding expertise of my potential colleagues and supervisors make this the perfect opportunity for me.
+
+\lettersection{Why Me?}
+
+I am convinced I am a good candidate for the position because of my skills in machine learning and artificial intelligence, and my experience working on a complex robotics project as part of a team. 
+
+Furthermore, I believe that two of my strongest skills are the ability to learn independently and resilience. A good example are my results in the International Baccalaureate, one of the most challenging high-school programs, which I started after moving to Cambridge from Spain without speaking fluent English, and where I managed to obtain a grade that put me in the 99th percentile in the world.
+
+In addition, I have good written and personal communication skills. I have been working as a code reviewer for Udacity for 5 years, where I have learnt how to provide feedback and constructive criticism on complex projects in a friendly and encouraging manner. Moreover, I have been a salsa teacher for several months, which has helped me develop good oral skills in front of a group and under pressure. 
+
+The above reasons, together with my passion for robotics, would make me a good candidate for the position. I hope you take me into consideration. 
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
